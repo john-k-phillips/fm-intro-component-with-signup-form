@@ -127,6 +127,17 @@
   .form-container {
     width: 100%;
   }
+  .form-container .trail {
+    max-width: 600px;
+  }
+  .form-container form {
+    max-width: 600px;
+    padding: 2em;
+    gap: 1.5em;
+  }
+  .form-container form input {
+    padding-left: 2em;
+  }
 }
 
 *, *::after, *::before {
@@ -165,7 +176,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 10em;
+    padding: 8em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
