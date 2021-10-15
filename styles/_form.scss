@@ -54,6 +54,15 @@
             font-size: 16px;
             color: $dark-blue;
             font-weight: bold;
+            &:invalid {
+                border: 2px solid $red;
+            }
+            &:invalid ~ .error-display {
+                display: block;
+            }
+            &:invalid + .error-img {
+                display: flex;
+            }
         }
         .form-btn {
             padding: 1em;
@@ -86,6 +95,36 @@
                 color: $red;
             }
         }
+    }
+}
+
+// ERROR HANDLING
+.input-container { 
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.error-display {
+    display: none;
+}
+
+.error {
+    color: $red;
+    text-align: right;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+.error-img {
+    position: absolute;
+    right: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    img {
+        height: 25px;
     }
 }
 
