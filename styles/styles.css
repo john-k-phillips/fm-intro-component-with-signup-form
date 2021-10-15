@@ -123,6 +123,7 @@ body {
 @media screen and (min-width: 1440px) {
   body {
     background: url("../images/bg-intro-desktop.png") no-repeat, #ff7a7a;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=styles.css.map */
