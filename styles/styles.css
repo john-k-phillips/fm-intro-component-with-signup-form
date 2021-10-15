@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.content {
+  margin: auto;
+  margin-top: 12vh;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 1.8em;
+}
+
+.content p {
+  margin: auto;
+  margin-top: 1em;
+  max-width: 85%;
+  max-width: 320px;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
