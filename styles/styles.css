@@ -16,6 +16,24 @@
   max-width: 320px;
 }
 
+@media screen and (min-width: 1440px) {
+  .content {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+  }
+  .content h1 {
+    margin: auto;
+    font-size: 3em;
+    max-width: 500px;
+  }
+  .content p {
+    max-width: none;
+    margin: auto;
+    max-width: 500px;
+  }
+}
+
 .form-container, form, .trail, h1, p {
   margin: auto;
 }
@@ -105,6 +123,12 @@
   color: #ff7a7a;
 }
 
+@media screen and (min-width: 1440px) {
+  .form-container {
+    width: 100%;
+  }
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -124,6 +148,24 @@ body {
   body {
     background: url("../images/bg-intro-desktop.png") no-repeat, #ff7a7a;
     background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -13,3 +13,22 @@
         max-width: 320px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .content {
+        width: 100%;
+        margin: auto;
+
+        text-align: left;
+        h1 {
+            margin: auto;
+            font-size: 3em;
+            max-width: 500px;
+        }
+        p {
+            max-width: none;
+            margin: auto;
+            max-width: 500px;
+        }
+    }
+}
