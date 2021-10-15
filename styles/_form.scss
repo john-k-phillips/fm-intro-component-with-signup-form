@@ -16,10 +16,6 @@
     @include card(0.5em);
 }
 
-.trail, button {
-    cursor: pointer;
-}
-
 .form-container {
     text-align: center;
     
@@ -73,6 +69,7 @@
             font-family: 'Poppins', sans-serif;
             letter-spacing: 0.1em;
 
+            cursor: pointer;
             &:hover {
                 background-color: hsl(154, 62%, 65%);
             }
