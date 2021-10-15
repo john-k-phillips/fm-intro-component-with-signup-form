@@ -57,7 +57,7 @@ Your users should be able to:
 </p>
 <h3>What I Learnt</h3>
   <p>
-    I learnt how to error handle without requiring JavaScript; although, I think JavaScript woudld have been a better solution.
+    I learnt how to error handle without requiring JavaScript; although, I think JavaScript would have been a better solution.
   </p>
 <h3>Continued Development</h3>
   <p>
