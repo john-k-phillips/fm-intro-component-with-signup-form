@@ -1,0 +1,54 @@
+@mixin card($radius) {
+    border-radius: $radius;
+    box-shadow: 0px 8px hsla(249, 10%, 26%, 0.33);
+}
+
+.form-container {
+    margin: auto;
+
+    text-align: center;
+    .trail {
+        @include card(0.5em);
+
+        margin: auto;
+        margin-top: 3em;
+        max-width: 300px;
+        padding: 1em 3em;
+
+
+        background-color: $blue;
+        p {
+            font-weight: lighter;
+        }
+    }
+
+    form {
+        @include card(0.5em);
+
+        margin: auto;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+
+        padding: 1.5em;
+
+        max-width: 300px;
+
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        input {
+            padding: 1em;
+
+            border: none;
+            outline: none;
+            border: 1px solid $grayish-blue;
+            border-radius: 0.25em;
+
+            font-size: 16px;
+            color: $dark-blue;
+            font-weight: bold;
+        }
+    }
+}
