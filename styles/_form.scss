@@ -3,18 +3,30 @@
     box-shadow: 0px 8px hsla(249, 10%, 26%, 0.33);
 }
 
-.form-container {
+.form-container, form, .trail, h1, p {
     margin: auto;
+}
 
+.trail, form, h1 {
+    width: 90%;
+    max-width: 320px;
+}
+
+.trail, form {
+    @include card(0.5em);
+}
+
+.trail, button {
+    cursor: pointer;
+}
+
+.form-container {
     text-align: center;
+    
     .trail {
-        @include card(0.5em);
 
-        margin: auto;
         margin-top: 3em;
-        max-width: 300px;
         padding: 1em 3em;
-
 
         background-color: $blue;
         p {
@@ -23,15 +35,12 @@
     }
 
     form {
-        @include card(0.5em);
+        $input-radius: 0.3em;
 
-        margin: auto;
         margin-top: 1.5em;
         margin-bottom: 2em;
 
         padding: 1.5em;
-
-        max-width: 300px;
 
         background-color: #fff;
 
@@ -44,11 +53,41 @@
             border: none;
             outline: none;
             border: 1px solid $grayish-blue;
-            border-radius: 0.25em;
+            border-radius: $input-radius;
 
             font-size: 16px;
             color: $dark-blue;
             font-weight: bold;
+        }
+        .form-btn {
+            padding: 1em;
+            
+            outline: none;
+            border: none;
+            background-color: $green;
+            border-radius: $input-radius;
+            box-shadow: 0px 4px hsl(154, 60%, 41%);
+
+            color: #fff;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.1em;
+
+            &:hover {
+                background-color: hsl(154, 62%, 65%);
+            }
+        }
+        p {
+            max-width: 90%;
+
+            color: $grayish-blue;
+            font-size: 0.7em;
+            a {
+                text-decoration: none;
+
+                font-weight: 600;
+                color: $red;
+            }
         }
     }
 }
