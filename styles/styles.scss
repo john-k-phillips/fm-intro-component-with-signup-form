@@ -10,4 +10,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    
+    background: url("../images/bg-intro-mobile.png") no-repeat, $red;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background: url("../images/bg-intro-desktop.png") no-repeat, $red;
+    }
 }
