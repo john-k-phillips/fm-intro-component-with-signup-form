@@ -9,6 +9,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  color: white;
   background: url("../images/bg-intro-mobile.png") no-repeat, #ff7a7a;
   background-attachment: fixed;
 }
