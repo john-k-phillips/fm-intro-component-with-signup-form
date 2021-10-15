@@ -51,7 +51,7 @@
 
 .trail, form, h1 {
   width: 90%;
-  max-width: 320px;
+  max-width: 500px;
 }
 
 .trail, form {
@@ -138,11 +138,7 @@
   .form-container {
     width: 100%;
   }
-  .form-container .trail {
-    max-width: 600px;
-  }
   .form-container form {
-    max-width: 600px;
     padding: 2em;
     gap: 1.5em;
   }
